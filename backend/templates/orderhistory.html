@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+</head>
+<body>
+    <h1>Transactions:</h1>
+    <br>
+    <div>
+        {% for element in elements %}
+        <div>=======================</div>
+        <div>ID: {{ element[0] }}</div>
+        <div>Order: {{ element[1] }}</div>
+        <div>Address: {{ element[2] }}</div>
+        <div>First name: {{ element[3] }}</div>
+        <div>Last name: {{ element[4] }}</div>
+        <div>Created: {{ element[5] }}</div>
+        <div>Phone number: {{ element[6] }}</div>
+        <div>=======================</div>
+        <br>
+        {% endfor %}
+    </div>
+</body>
+</html>
